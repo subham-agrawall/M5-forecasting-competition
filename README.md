@@ -3,7 +3,7 @@ Below is the competition link for problem statement and other details. Full data
 https://www.kaggle.com/c/m5-forecasting-accuracy/ 
 
 ## Pipeline
-In this repository, a pipeline is implemented for M5-forecasting competition. It does an end to end job from loading data to final submission file creation. Most of the components are parameterized that makes easy for experimentation and can also be leveraged in other problems.
+In this repository, a pipeline is implemented for M5-forecasting competition. It does an end to end job from loading data to final submission file creation.
 
 ## Components
 1. tsmodels.R: Time Series or ML models
@@ -18,4 +18,4 @@ In this repository, a pipeline is implemented for M5-forecasting competition. It
 3. pipeline_l12: This is bottom up aggregation pipeline. Forecasting is done at level 12 and then aggregated for all levels. Any time series model, evluation metric or aggregation methodology implemented as components can be used for forecasting.
 4. pipeline_l1: This is top down aggregation pipeline. Forecasting is done at level 1 and then extrapolated for all levels. Same as the other pipeline, implemented components can be called here.
 
-This framework allows us to experiment with different features, models, evaluation metrics or aggregation approaches in a parametric manner.
+This framework allows us to experiment with different features, models, evaluation metrics or aggregation approaches in a parametric manner. These components can also be leveraged in other forecasting solutions.
